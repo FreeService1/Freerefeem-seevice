@@ -1,0 +1,83 @@
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            padding: 10px;
+            background-color: #4267B2;
+            border-bottom: 1px solid #ddd;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .header button {
+            background-color: #365899;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .header button:hover {
+            background-color: #29487d;
+        }
+
+        .table-container {
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4267B2;
+            color: #fff;
+        }
+
+        .copy-btn {
+            background: none;
+            border: none;
+            color: #4267B2;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .copy-btn ion-icon {
+            color: #4267B2;
+            font-size: 18px;
+        }
+
+        .copy-btn:hover {
+            color: #365899;
+        }
+
+        /* Ensure icons are sized appropriately */
+        ion-icon {
+            vertical-align: middle;
+        }
+    
+
+
+

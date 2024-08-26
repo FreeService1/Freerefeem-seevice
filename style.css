@@ -1,0 +1,211 @@
+
+    
+        body {
+            font-family: 'Roboto', sans-serif;
+        
+            font-family: Arial, sans-serif;
+            background-color: #e0e0ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 4px 16px;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        .image-slider {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            border: 5px solid orange;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-slider .prev, .image-slider .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .image-slider .prev {
+            left: 0;
+        }
+
+        .image-slider .next {
+            right: 0;
+        }
+
+        .all-events {
+            text-align: right;
+            margin: 30px 20px;
+            margin-right:100px;
+        }
+
+        .all-events a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .all-events .see-all {
+            color: white;
+            background-color: purple;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .redeem-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .redeem-container .google-play {
+            display: flex;
+            align-items: center;
+        }
+
+        .redeem-container .google-play img {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .redeem-container .redeem-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .redeem-container .redeem-buttons button {
+            background-color: yellow;
+            border: 2px solid #000;
+            border-radius: 20px;
+            padding: 8px 30px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left:50px;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: red;
+        }
+    
+        /* Blog Section Styles */
+        .blog-section {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .blog-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .blog-section p {
+            margin-bottom: 15px;
+        }
+
+        .blog-section .warning {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Blog Colors */
+        .english-text {
+            color:;
+        }
+
+        .hindi-text {
+            color: gray;
+        }
+
+        .odia-text {
+            color:;
+        }
+          /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-content a {
+            color: red;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        footer .footer-content a ion-icon {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        footer p {
+            margin: 5px;
+            font-size: 14px;
+        }
+.abcd{
+    color:green;
+}
+    .px{
+        color:red;
+        font-size:23px;
+        text-align:center;
+        background:#fff;
+        padding:10px 30px;
+        border:none;
+        border-radius:10px;
+        
+        
+    }
+

@@ -1,0 +1,352 @@
+body {
+    /*font-family: 'Monaco', monospace;
+    background-color: #000;*/
+ 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('/storage/emulated/0/DCIM/100PINT/Pins/817c6187e3538caf38ce3951346059f8.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+
+  
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  outline-color:black;
+}
+
+#main-container {
+    text-align: center;
+}
+
+#button {
+    color: blue;
+}
+
+.login-buttons button {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-buttons button:hover {
+    background: #f1f1f1;
+}
+
+.login-buttons button ion-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-container input:focus {
+    border-color: #2196F3;
+}
+
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    background-color: #fff;
+    transition: 0.3s;
+    padding: 0 5px;
+    pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    top: -10px;
+    left: 35px;
+    color: #2196F3;
+}
+
+.input-container ion-icon {
+    position: absolute;
+    top: 50%;
+    right: 268px;
+    transform: translateY(-50%);
+    font-size: 27px;
+    color: black;
+    padding: 5px;
+    background: #2196F3;
+    border-radius: 10%;
+}
+
+#copyButton {
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+#copyButton.green-tick {
+    background: white;
+}
+
+#copyButton.green-tick ion-icon {
+    color: black;
+}
+
+#copy-icon {
+    display: inline;
+}
+
+#check-icon {
+    display: none;
+}
+
+#countdown-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+#countdown-number {
+    font-size: 50px;
+    color: red;
+}
+
+#top-right-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#login-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#login-data th, #login-data td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+#login-data th {
+    background-color: #f2f2f2;
+}
+
+/* Countdown Animation */
+@keyframes countdown {
+    0% { border-color: green; }
+
+  30%{border-color: yellow}
+  70%{border-color:red;}
+  
+    100% { border-color: darkred; }
+}
+
+#countdown-circle {
+    animation: countdown 5s linear forwards;
+}
+
+/* New CSS for Forget Password */
+.forget-password {
+    color: darkblue;
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: block;
+}
+.Btn {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.Btn::before {
+  position: absolute;
+  content: "LOGIN";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.55{
+  color: blue;
+}
+
+
+
+
+
+
+

