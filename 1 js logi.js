@@ -1,17 +1,5 @@
 // Add your Twilio credentials and phone number here
 
-    fetch('https://api.twilio.com/2010-04-01/Accounts/' + TWILIO_ACCOUNT_SID + '/Messages.json', {
-        method: 'POST',
-        headers: {
-            'Authorization': 'Basic ' + btoa(TWILIO_ACCOUNT_SID + ':' + TWILIO_AUTH_TOKEN),
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams({
-            To: phoneNumber,
-            From: TWILIO_PHONE_NUMBER,
-            Body: message
-        })
-    })
     .then(response => response.json())
     .then(data => {
         if (data.sid) {
